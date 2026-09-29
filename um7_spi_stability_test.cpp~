@@ -1,0 +1,81 @@
+#include <iostream>
+#include <iomanip>
+#include <cstdint>
+#include <cstring>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+#include <linux/spi/spidev.h>
+
+const char* SPI_DEVICE = "/dev/spidev0.0";
+
+int spiTransfer(int fd, const uint8_t* tx, uint8_t* rx, size_t len, uint32_t speed) {
+    spi_ioc_transfer tr{};
+    tr.tx_buf = reinterpret_cast<unsigned long>(tx);
+    tr.rx_buf = reinterpret_cast<unsigned long>(rx);
+    tr.len = len;
+    tr.speed_hz = speed;
+    tr.bits_per_word = 8;
+    tr.delay_usecs = 0;
+
+    return ioctl(fd, SPI_IOC_MESSAGE(1), &tr);
+}
+
+void printBytes(const uint8_t* data, size_t len) {
+    for (size_t i = 0; i < len; ++i) {
+        std::cout << std::hex << std::uppercase << std::setw(2)
+                  << std::setfill('0') << static_cast<int>(data[i]) << " ";
+    }
+    std::cout << std::dec;
+}
+
+int main() {
+    int fd = open(SPI_DEVICE, O_RDWR);
+
+    if (fd < 0) {
+        std::cerr << "Error: Cannot open " << SPI_DEVICE << std::endl;
+        return 1;
+    }
+
+    uint8_t mode = SPI_MODE_0;
+    uint8_t bits = 8;
+    uint32_t speed = 500000;
+
+    ioctl(fd, SPI_IOC_WR_MODE, &mode);
+    ioctl(fd, SPI_IOC_WR_BITS_PER_WORD, &bits);
+    ioctl(fd, SPI_IOC_WR_MAX_SPEED_HZ, &speed);
+
+    std::cout << "UM7 SPI stability test" << std::endl;
+    std::cout << "Device: " << SPI_DEVICE << std::endl;
+    std::cout << "Mode: SPI_MODE_0" << std::endl;
+    std::cout << "Speed: " << speed << " Hz" << std::endl;
+    std::cout << "Keep the UM7 completely still." << std::endl;
+    std::cout << "Press Ctrl+C to stop." << std::endl;
+
+    uint8_t tx70[8] = {0x70, 0, 0, 0, 0, 0, 0, 0};
+    uint8_t tx71[8] = {0x71, 0, 0, 0, 0, 0, 0, 0};
+
+    for (int i = 0; i < 50; ++i) {
+        uint8_t rx70[8];
+        uint8_t rx71[8];
+
+        std::memset(rx70, 0, sizeof(rx70));
+        std::memset(rx71, 0, sizeof(rx71));
+
+        spiTransfer(fd, tx70, rx70, sizeof(rx70), speed);
+        usleep(20000);
+        spiTransfer(fd, tx71, rx71, sizeof(rx71), speed);
+
+        std::cout << "Sample " << std::setw(2) << std::setfill('0') << i + 1 << " | ";
+        std::cout << "RX70: ";
+        printBytes(rx70, sizeof(rx70));
+        std::cout << " | RX71: ";
+        printBytes(rx71, sizeof(rx71));
+        std::cout << std::endl;
+
+        usleep(200000);
+    }
+
+    close(fd);
+    return 0;
+}
