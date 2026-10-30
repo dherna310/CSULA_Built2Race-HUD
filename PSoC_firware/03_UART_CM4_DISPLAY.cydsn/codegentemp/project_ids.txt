@@ -1,0 +1,9 @@
+C:\Users\srestre\iCloudDrive\Documents\CALSTATELA\CSULA_Fall_2026\Senior Design\ARHUD\01_BT_Test.cydsn\01_BT_Test.cyprj|dbf8d182-74c7-459e-a540-ba185752e44e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|b28f149e-23a0-40c2-af77-8e350e7d7df9
+C:\Users\srestre\OneDrive - Cal State LA\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|088311df-1c4e-4491-bc08-f999f8bdc1b2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|dc8f16b5-0003-4684-b154-46e471c6d06b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|cb9786d8-a7cb-4344-96a6-32de21d41991
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|8be44597-2c46-445d-bb60-ac34494ed52f
+C:\Users\srestre\iCloudDrive\Documents\CALSTATELA\CSULA_Fall_2026\Senior Design\ARHUD\02_UART_PROJECTOR.cydsn\02_UART_PROJECTOR.cyprj|46bae43e-8a51-4747-be0c-ae5024cd911f
+C:\Users\srestre\iCloudDrive\Documents\CALSTATELA\CSULA_Fall_2026\Senior Design\ARHUD\03_UART_CM4_DISPLAY.cydsn\03_UART_CM4_DISPLAY.cyprj|56087c33-9f95-49eb-a668-7cfea3fb12aa
+C:\Users\srestre\iCloudDrive\Documents\CALSTATELA\CSULA_Fall_2026\Senior Design\ARHUD\04_BLE_PROJ.cydsn\04_BLE_PROJ.cyprj|86945a96-23d0-4ab7-93d1-67a23d74d391

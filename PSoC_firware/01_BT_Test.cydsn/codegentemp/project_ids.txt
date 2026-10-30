@@ -1,0 +1,8 @@
+C:\School\EE 4450\PSoC_ARHUD\ARHUD\01_BT_Test.cydsn\01_BT_Test.cyprj|e50d8293-518f-46bc-8a36-6524e21f29fe
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|d787d864-cf93-4c30-a5b8-6ecc17e379e0
+C:\Users\steel\OneDrive\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|da3ca149-1fb8-44a3-8ab1-2c29268a1bf7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|b5e2b4b2-15e4-4ada-bbb9-f92d05dac270
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e3e0959c-71cc-478c-a4d2-00a731488a9d
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|47d82a92-7277-4e5b-9d07-e4545daf9cd2
+C:\School\EE 4450\PSoC_ARHUD\ARHUD\02_UART_PROJECTOR.cydsn\02_UART_PROJECTOR.cyprj|bafdc820-d853-4732-bd73-33637b3fd649
+C:\School\EE 4450\PSoC_ARHUD\ARHUD\03_UART_CM4_DISPLAY.cydsn\03_UART_CM4_DISPLAY.cyprj|be3b64fe-b312-4f92-9e9d-7e1822d6fd51

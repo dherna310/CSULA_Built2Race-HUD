@@ -1,0 +1,2046 @@
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"BLE_custom_config.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.global	cy_ble_customConfig
+  20              		.section	.rodata
+  21              		.align	2
+  22              		.type	cy_ble_customs, %object
+  23              		.size	cy_ble_customs, 14
+  24              	cy_ble_customs:
+  25 0000 1000     		.short	16
+  26 0002 1200     		.short	18
+  27 0004 1300     		.short	19
+  28 0006 0000     		.short	0
+  29 0008 1500     		.short	21
+  30 000a 1600     		.short	22
+  31 000c 1700     		.short	23
+  32              		.data
+  33              		.align	2
+  34              		.type	cy_ble_customConfig, %object
+  35              		.size	cy_ble_customConfig, 4
+  36              	cy_ble_customConfig:
+  37 0000 00000000 		.word	cy_ble_customs
+  38              		.text
+  39              	.Letext0:
+  40              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  41              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  42              		.file 3 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/device/cy_device.h"
+  43              		.file 4 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack_host_main.h"
+  44              		.file 5 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack_gatt.h"
+  45              		.file 6 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_gap.h"
+  46              		.file 7 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_custom.h"
+  47              		.file 8 "Generated_Source\\PSoC6\\BLE_custom_config.c"
+  48              		.section	.debug_info,"",%progbits
+  49              	.Ldebug_info0:
+  50 0000 E6060000 		.4byte	0x6e6
+  51 0004 0400     		.2byte	0x4
+  52 0006 00000000 		.4byte	.Ldebug_abbrev0
+  53 000a 04       		.byte	0x4
+  54 000b 01       		.uleb128 0x1
+  55 000c 96070000 		.4byte	.LASF141
+  56 0010 0C       		.byte	0xc
+  57 0011 E8030000 		.4byte	.LASF142
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 2
+
+
+  58 0015 BF060000 		.4byte	.LASF143
+  59 0019 00000000 		.4byte	.Ldebug_line0
+  60 001d 02       		.uleb128 0x2
+  61 001e 04       		.byte	0x4
+  62 001f 05       		.byte	0x5
+  63 0020 696E7400 		.ascii	"int\000"
+  64 0024 03       		.uleb128 0x3
+  65 0025 04       		.byte	0x4
+  66 0026 07       		.byte	0x7
+  67 0027 53030000 		.4byte	.LASF0
+  68 002b 03       		.uleb128 0x3
+  69 002c 08       		.byte	0x8
+  70 002d 05       		.byte	0x5
+  71 002e 53010000 		.4byte	.LASF1
+  72 0032 03       		.uleb128 0x3
+  73 0033 08       		.byte	0x8
+  74 0034 04       		.byte	0x4
+  75 0035 28080000 		.4byte	.LASF2
+  76 0039 03       		.uleb128 0x3
+  77 003a 01       		.byte	0x1
+  78 003b 06       		.byte	0x6
+  79 003c 61010000 		.4byte	.LASF3
+  80 0040 04       		.uleb128 0x4
+  81 0041 86000000 		.4byte	.LASF5
+  82 0045 01       		.byte	0x1
+  83 0046 1D       		.byte	0x1d
+  84 0047 4B000000 		.4byte	0x4b
+  85 004b 03       		.uleb128 0x3
+  86 004c 01       		.byte	0x1
+  87 004d 08       		.byte	0x8
+  88 004e 9D060000 		.4byte	.LASF4
+  89 0052 04       		.uleb128 0x4
+  90 0053 EA020000 		.4byte	.LASF6
+  91 0057 01       		.byte	0x1
+  92 0058 29       		.byte	0x29
+  93 0059 5D000000 		.4byte	0x5d
+  94 005d 03       		.uleb128 0x3
+  95 005e 02       		.byte	0x2
+  96 005f 05       		.byte	0x5
+  97 0060 F3060000 		.4byte	.LASF7
+  98 0064 04       		.uleb128 0x4
+  99 0065 53080000 		.4byte	.LASF8
+ 100 0069 01       		.byte	0x1
+ 101 006a 2B       		.byte	0x2b
+ 102 006b 6F000000 		.4byte	0x6f
+ 103 006f 03       		.uleb128 0x3
+ 104 0070 02       		.byte	0x2
+ 105 0071 07       		.byte	0x7
+ 106 0072 A2080000 		.4byte	.LASF9
+ 107 0076 03       		.uleb128 0x3
+ 108 0077 04       		.byte	0x4
+ 109 0078 05       		.byte	0x5
+ 110 0079 D5010000 		.4byte	.LASF10
+ 111 007d 04       		.uleb128 0x4
+ 112 007e C0020000 		.4byte	.LASF11
+ 113 0082 01       		.byte	0x1
+ 114 0083 41       		.byte	0x41
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 3
+
+
+ 115 0084 88000000 		.4byte	0x88
+ 116 0088 03       		.uleb128 0x3
+ 117 0089 04       		.byte	0x4
+ 118 008a 07       		.byte	0x7
+ 119 008b C2030000 		.4byte	.LASF12
+ 120 008f 03       		.uleb128 0x3
+ 121 0090 08       		.byte	0x8
+ 122 0091 07       		.byte	0x7
+ 123 0092 E8000000 		.4byte	.LASF13
+ 124 0096 03       		.uleb128 0x3
+ 125 0097 04       		.byte	0x4
+ 126 0098 07       		.byte	0x7
+ 127 0099 18050000 		.4byte	.LASF14
+ 128 009d 03       		.uleb128 0x3
+ 129 009e 01       		.byte	0x1
+ 130 009f 08       		.byte	0x8
+ 131 00a0 34080000 		.4byte	.LASF15
+ 132 00a4 04       		.uleb128 0x4
+ 133 00a5 66090000 		.4byte	.LASF16
+ 134 00a9 02       		.byte	0x2
+ 135 00aa 18       		.byte	0x18
+ 136 00ab 40000000 		.4byte	0x40
+ 137 00af 04       		.uleb128 0x4
+ 138 00b0 4B010000 		.4byte	.LASF17
+ 139 00b4 02       		.byte	0x2
+ 140 00b5 20       		.byte	0x20
+ 141 00b6 52000000 		.4byte	0x52
+ 142 00ba 04       		.uleb128 0x4
+ 143 00bb A7030000 		.4byte	.LASF18
+ 144 00bf 02       		.byte	0x2
+ 145 00c0 24       		.byte	0x24
+ 146 00c1 64000000 		.4byte	0x64
+ 147 00c5 04       		.uleb128 0x4
+ 148 00c6 8D070000 		.4byte	.LASF19
+ 149 00ca 02       		.byte	0x2
+ 150 00cb 30       		.byte	0x30
+ 151 00cc 7D000000 		.4byte	0x7d
+ 152 00d0 05       		.uleb128 0x5
+ 153 00d1 B8       		.byte	0xb8
+ 154 00d2 03       		.byte	0x3
+ 155 00d3 34       		.byte	0x34
+ 156 00d4 E1040000 		.4byte	0x4e1
+ 157 00d8 06       		.uleb128 0x6
+ 158 00d9 CF000000 		.4byte	.LASF20
+ 159 00dd 03       		.byte	0x3
+ 160 00de 37       		.byte	0x37
+ 161 00df C5000000 		.4byte	0xc5
+ 162 00e3 00       		.byte	0
+ 163 00e4 06       		.uleb128 0x6
+ 164 00e5 B5020000 		.4byte	.LASF21
+ 165 00e9 03       		.byte	0x3
+ 166 00ea 38       		.byte	0x38
+ 167 00eb C5000000 		.4byte	0xc5
+ 168 00ef 04       		.byte	0x4
+ 169 00f0 06       		.uleb128 0x6
+ 170 00f1 19020000 		.4byte	.LASF22
+ 171 00f5 03       		.byte	0x3
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 4
+
+
+ 172 00f6 39       		.byte	0x39
+ 173 00f7 C5000000 		.4byte	0xc5
+ 174 00fb 08       		.byte	0x8
+ 175 00fc 06       		.uleb128 0x6
+ 176 00fd 65060000 		.4byte	.LASF23
+ 177 0101 03       		.byte	0x3
+ 178 0102 3A       		.byte	0x3a
+ 179 0103 C5000000 		.4byte	0xc5
+ 180 0107 0C       		.byte	0xc
+ 181 0108 06       		.uleb128 0x6
+ 182 0109 82010000 		.4byte	.LASF24
+ 183 010d 03       		.byte	0x3
+ 184 010e 3B       		.byte	0x3b
+ 185 010f C5000000 		.4byte	0xc5
+ 186 0113 10       		.byte	0x10
+ 187 0114 06       		.uleb128 0x6
+ 188 0115 CB010000 		.4byte	.LASF25
+ 189 0119 03       		.byte	0x3
+ 190 011a 3C       		.byte	0x3c
+ 191 011b C5000000 		.4byte	0xc5
+ 192 011f 14       		.byte	0x14
+ 193 0120 06       		.uleb128 0x6
+ 194 0121 DF030000 		.4byte	.LASF26
+ 195 0125 03       		.byte	0x3
+ 196 0126 3D       		.byte	0x3d
+ 197 0127 C5000000 		.4byte	0xc5
+ 198 012b 18       		.byte	0x18
+ 199 012c 06       		.uleb128 0x6
+ 200 012d 67000000 		.4byte	.LASF27
+ 201 0131 03       		.byte	0x3
+ 202 0132 3E       		.byte	0x3e
+ 203 0133 C5000000 		.4byte	0xc5
+ 204 0137 1C       		.byte	0x1c
+ 205 0138 06       		.uleb128 0x6
+ 206 0139 D0090000 		.4byte	.LASF28
+ 207 013d 03       		.byte	0x3
+ 208 013e 3F       		.byte	0x3f
+ 209 013f C5000000 		.4byte	0xc5
+ 210 0143 20       		.byte	0x20
+ 211 0144 06       		.uleb128 0x6
+ 212 0145 D6050000 		.4byte	.LASF29
+ 213 0149 03       		.byte	0x3
+ 214 014a 40       		.byte	0x40
+ 215 014b C5000000 		.4byte	0xc5
+ 216 014f 24       		.byte	0x24
+ 217 0150 06       		.uleb128 0x6
+ 218 0151 CD040000 		.4byte	.LASF30
+ 219 0155 03       		.byte	0x3
+ 220 0156 43       		.byte	0x43
+ 221 0157 A4000000 		.4byte	0xa4
+ 222 015b 28       		.byte	0x28
+ 223 015c 06       		.uleb128 0x6
+ 224 015d 4D000000 		.4byte	.LASF31
+ 225 0161 03       		.byte	0x3
+ 226 0162 44       		.byte	0x44
+ 227 0163 A4000000 		.4byte	0xa4
+ 228 0167 29       		.byte	0x29
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 5
+
+
+ 229 0168 06       		.uleb128 0x6
+ 230 0169 C6090000 		.4byte	.LASF32
+ 231 016d 03       		.byte	0x3
+ 232 016e 45       		.byte	0x45
+ 233 016f A4000000 		.4byte	0xa4
+ 234 0173 2A       		.byte	0x2a
+ 235 0174 06       		.uleb128 0x6
+ 236 0175 C8050000 		.4byte	.LASF33
+ 237 0179 03       		.byte	0x3
+ 238 017a 46       		.byte	0x46
+ 239 017b A4000000 		.4byte	0xa4
+ 240 017f 2B       		.byte	0x2b
+ 241 0180 06       		.uleb128 0x6
+ 242 0181 5D040000 		.4byte	.LASF34
+ 243 0185 03       		.byte	0x3
+ 244 0186 47       		.byte	0x47
+ 245 0187 A4000000 		.4byte	0xa4
+ 246 018b 2C       		.byte	0x2c
+ 247 018c 06       		.uleb128 0x6
+ 248 018d 81080000 		.4byte	.LASF35
+ 249 0191 03       		.byte	0x3
+ 250 0192 48       		.byte	0x48
+ 251 0193 A4000000 		.4byte	0xa4
+ 252 0197 2D       		.byte	0x2d
+ 253 0198 06       		.uleb128 0x6
+ 254 0199 8B010000 		.4byte	.LASF36
+ 255 019d 03       		.byte	0x3
+ 256 019e 49       		.byte	0x49
+ 257 019f A4000000 		.4byte	0xa4
+ 258 01a3 2E       		.byte	0x2e
+ 259 01a4 06       		.uleb128 0x6
+ 260 01a5 F7040000 		.4byte	.LASF37
+ 261 01a9 03       		.byte	0x3
+ 262 01aa 4A       		.byte	0x4a
+ 263 01ab A4000000 		.4byte	0xa4
+ 264 01af 2F       		.byte	0x2f
+ 265 01b0 06       		.uleb128 0x6
+ 266 01b1 39080000 		.4byte	.LASF38
+ 267 01b5 03       		.byte	0x3
+ 268 01b6 4B       		.byte	0x4b
+ 269 01b7 A4000000 		.4byte	0xa4
+ 270 01bb 30       		.byte	0x30
+ 271 01bc 06       		.uleb128 0x6
+ 272 01bd D4030000 		.4byte	.LASF39
+ 273 01c1 03       		.byte	0x3
+ 274 01c2 4E       		.byte	0x4e
+ 275 01c3 A4000000 		.4byte	0xa4
+ 276 01c7 31       		.byte	0x31
+ 277 01c8 06       		.uleb128 0x6
+ 278 01c9 78000000 		.4byte	.LASF40
+ 279 01cd 03       		.byte	0x3
+ 280 01ce 4F       		.byte	0x4f
+ 281 01cf A4000000 		.4byte	0xa4
+ 282 01d3 32       		.byte	0x32
+ 283 01d4 06       		.uleb128 0x6
+ 284 01d5 47030000 		.4byte	.LASF41
+ 285 01d9 03       		.byte	0x3
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 6
+
+
+ 286 01da 50       		.byte	0x50
+ 287 01db A4000000 		.4byte	0xa4
+ 288 01df 33       		.byte	0x33
+ 289 01e0 06       		.uleb128 0x6
+ 290 01e1 2C050000 		.4byte	.LASF42
+ 291 01e5 03       		.byte	0x3
+ 292 01e6 51       		.byte	0x51
+ 293 01e7 A4000000 		.4byte	0xa4
+ 294 01eb 34       		.byte	0x34
+ 295 01ec 06       		.uleb128 0x6
+ 296 01ed CC080000 		.4byte	.LASF43
+ 297 01f1 03       		.byte	0x3
+ 298 01f2 52       		.byte	0x52
+ 299 01f3 AF000000 		.4byte	0xaf
+ 300 01f7 36       		.byte	0x36
+ 301 01f8 06       		.uleb128 0x6
+ 302 01f9 33020000 		.4byte	.LASF44
+ 303 01fd 03       		.byte	0x3
+ 304 01fe 53       		.byte	0x53
+ 305 01ff AF000000 		.4byte	0xaf
+ 306 0203 38       		.byte	0x38
+ 307 0204 06       		.uleb128 0x6
+ 308 0205 1B090000 		.4byte	.LASF45
+ 309 0209 03       		.byte	0x3
+ 310 020a 54       		.byte	0x54
+ 311 020b AF000000 		.4byte	0xaf
+ 312 020f 3A       		.byte	0x3a
+ 313 0210 06       		.uleb128 0x6
+ 314 0211 B7090000 		.4byte	.LASF46
+ 315 0215 03       		.byte	0x3
+ 316 0216 55       		.byte	0x55
+ 317 0217 A4000000 		.4byte	0xa4
+ 318 021b 3C       		.byte	0x3c
+ 319 021c 06       		.uleb128 0x6
+ 320 021d 5A020000 		.4byte	.LASF47
+ 321 0221 03       		.byte	0x3
+ 322 0222 56       		.byte	0x56
+ 323 0223 A4000000 		.4byte	0xa4
+ 324 0227 3D       		.byte	0x3d
+ 325 0228 06       		.uleb128 0x6
+ 326 0229 6F070000 		.4byte	.LASF48
+ 327 022d 03       		.byte	0x3
+ 328 022e 57       		.byte	0x57
+ 329 022f A4000000 		.4byte	0xa4
+ 330 0233 3E       		.byte	0x3e
+ 331 0234 06       		.uleb128 0x6
+ 332 0235 5B000000 		.4byte	.LASF49
+ 333 0239 03       		.byte	0x3
+ 334 023a 58       		.byte	0x58
+ 335 023b A4000000 		.4byte	0xa4
+ 336 023f 3F       		.byte	0x3f
+ 337 0240 06       		.uleb128 0x6
+ 338 0241 E1050000 		.4byte	.LASF50
+ 339 0245 03       		.byte	0x3
+ 340 0246 59       		.byte	0x59
+ 341 0247 A4000000 		.4byte	0xa4
+ 342 024b 40       		.byte	0x40
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 7
+
+
+ 343 024c 06       		.uleb128 0x6
+ 344 024d DA020000 		.4byte	.LASF51
+ 345 0251 03       		.byte	0x3
+ 346 0252 5A       		.byte	0x5a
+ 347 0253 A4000000 		.4byte	0xa4
+ 348 0257 41       		.byte	0x41
+ 349 0258 06       		.uleb128 0x6
+ 350 0259 79040000 		.4byte	.LASF52
+ 351 025d 03       		.byte	0x3
+ 352 025e 5B       		.byte	0x5b
+ 353 025f A4000000 		.4byte	0xa4
+ 354 0263 42       		.byte	0x42
+ 355 0264 06       		.uleb128 0x6
+ 356 0265 A6050000 		.4byte	.LASF53
+ 357 0269 03       		.byte	0x3
+ 358 026a 5C       		.byte	0x5c
+ 359 026b A4000000 		.4byte	0xa4
+ 360 026f 43       		.byte	0x43
+ 361 0270 06       		.uleb128 0x6
+ 362 0271 22020000 		.4byte	.LASF54
+ 363 0275 03       		.byte	0x3
+ 364 0276 5D       		.byte	0x5d
+ 365 0277 A4000000 		.4byte	0xa4
+ 366 027b 44       		.byte	0x44
+ 367 027c 06       		.uleb128 0x6
+ 368 027d 00000000 		.4byte	.LASF55
+ 369 0281 03       		.byte	0x3
+ 370 0282 5E       		.byte	0x5e
+ 371 0283 C5000000 		.4byte	0xc5
+ 372 0287 48       		.byte	0x48
+ 373 0288 06       		.uleb128 0x6
+ 374 0289 F5010000 		.4byte	.LASF56
+ 375 028d 03       		.byte	0x3
+ 376 028e 5F       		.byte	0x5f
+ 377 028f C5000000 		.4byte	0xc5
+ 378 0293 4C       		.byte	0x4c
+ 379 0294 06       		.uleb128 0x6
+ 380 0295 460A0000 		.4byte	.LASF57
+ 381 0299 03       		.byte	0x3
+ 382 029a 60       		.byte	0x60
+ 383 029b A4000000 		.4byte	0xa4
+ 384 029f 50       		.byte	0x50
+ 385 02a0 06       		.uleb128 0x6
+ 386 02a1 25010000 		.4byte	.LASF58
+ 387 02a5 03       		.byte	0x3
+ 388 02a6 61       		.byte	0x61
+ 389 02a7 A4000000 		.4byte	0xa4
+ 390 02ab 51       		.byte	0x51
+ 391 02ac 06       		.uleb128 0x6
+ 392 02ad EE050000 		.4byte	.LASF59
+ 393 02b1 03       		.byte	0x3
+ 394 02b2 62       		.byte	0x62
+ 395 02b3 A4000000 		.4byte	0xa4
+ 396 02b7 52       		.byte	0x52
+ 397 02b8 06       		.uleb128 0x6
+ 398 02b9 EE090000 		.4byte	.LASF60
+ 399 02bd 03       		.byte	0x3
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 8
+
+
+ 400 02be 63       		.byte	0x63
+ 401 02bf A4000000 		.4byte	0xa4
+ 402 02c3 53       		.byte	0x53
+ 403 02c4 06       		.uleb128 0x6
+ 404 02c5 7D070000 		.4byte	.LASF61
+ 405 02c9 03       		.byte	0x3
+ 406 02ca 64       		.byte	0x64
+ 407 02cb A4000000 		.4byte	0xa4
+ 408 02cf 54       		.byte	0x54
+ 409 02d0 06       		.uleb128 0x6
+ 410 02d1 37010000 		.4byte	.LASF62
+ 411 02d5 03       		.byte	0x3
+ 412 02d6 65       		.byte	0x65
+ 413 02d7 A4000000 		.4byte	0xa4
+ 414 02db 55       		.byte	0x55
+ 415 02dc 06       		.uleb128 0x6
+ 416 02dd 8E080000 		.4byte	.LASF63
+ 417 02e1 03       		.byte	0x3
+ 418 02e2 66       		.byte	0x66
+ 419 02e3 A4000000 		.4byte	0xa4
+ 420 02e7 56       		.byte	0x56
+ 421 02e8 06       		.uleb128 0x6
+ 422 02e9 2B070000 		.4byte	.LASF64
+ 423 02ed 03       		.byte	0x3
+ 424 02ee 67       		.byte	0x67
+ 425 02ef A4000000 		.4byte	0xa4
+ 426 02f3 57       		.byte	0x57
+ 427 02f4 06       		.uleb128 0x6
+ 428 02f5 12000000 		.4byte	.LASF65
+ 429 02f9 03       		.byte	0x3
+ 430 02fa 68       		.byte	0x68
+ 431 02fb A4000000 		.4byte	0xa4
+ 432 02ff 58       		.byte	0x58
+ 433 0300 06       		.uleb128 0x6
+ 434 0301 AB060000 		.4byte	.LASF66
+ 435 0305 03       		.byte	0x3
+ 436 0306 69       		.byte	0x69
+ 437 0307 A4000000 		.4byte	0xa4
+ 438 030b 59       		.byte	0x59
+ 439 030c 06       		.uleb128 0x6
+ 440 030d 21050000 		.4byte	.LASF67
+ 441 0311 03       		.byte	0x3
+ 442 0312 6E       		.byte	0x6e
+ 443 0313 BA000000 		.4byte	0xba
+ 444 0317 5A       		.byte	0x5a
+ 445 0318 06       		.uleb128 0x6
+ 446 0319 B5080000 		.4byte	.LASF68
+ 447 031d 03       		.byte	0x3
+ 448 031e 6F       		.byte	0x6f
+ 449 031f BA000000 		.4byte	0xba
+ 450 0323 5C       		.byte	0x5c
+ 451 0324 06       		.uleb128 0x6
+ 452 0325 D9000000 		.4byte	.LASF69
+ 453 0329 03       		.byte	0x3
+ 454 032a 70       		.byte	0x70
+ 455 032b A4000000 		.4byte	0xa4
+ 456 032f 5E       		.byte	0x5e
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 9
+
+
+ 457 0330 06       		.uleb128 0x6
+ 458 0331 4F060000 		.4byte	.LASF70
+ 459 0335 03       		.byte	0x3
+ 460 0336 71       		.byte	0x71
+ 461 0337 A4000000 		.4byte	0xa4
+ 462 033b 5F       		.byte	0x5f
+ 463 033c 06       		.uleb128 0x6
+ 464 033d 95050000 		.4byte	.LASF71
+ 465 0341 03       		.byte	0x3
+ 466 0342 72       		.byte	0x72
+ 467 0343 A4000000 		.4byte	0xa4
+ 468 0347 60       		.byte	0x60
+ 469 0348 06       		.uleb128 0x6
+ 470 0349 28060000 		.4byte	.LASF72
+ 471 034d 03       		.byte	0x3
+ 472 034e 73       		.byte	0x73
+ 473 034f C5000000 		.4byte	0xc5
+ 474 0353 64       		.byte	0x64
+ 475 0354 06       		.uleb128 0x6
+ 476 0355 FF000000 		.4byte	.LASF73
+ 477 0359 03       		.byte	0x3
+ 478 035a 76       		.byte	0x76
+ 479 035b BA000000 		.4byte	0xba
+ 480 035f 68       		.byte	0x68
+ 481 0360 06       		.uleb128 0x6
+ 482 0361 B0030000 		.4byte	.LASF74
+ 483 0365 03       		.byte	0x3
+ 484 0366 77       		.byte	0x77
+ 485 0367 BA000000 		.4byte	0xba
+ 486 036b 6A       		.byte	0x6a
+ 487 036c 06       		.uleb128 0x6
+ 488 036d 13040000 		.4byte	.LASF75
+ 489 0371 03       		.byte	0x3
+ 490 0372 78       		.byte	0x78
+ 491 0373 BA000000 		.4byte	0xba
+ 492 0377 6C       		.byte	0x6c
+ 493 0378 06       		.uleb128 0x6
+ 494 0379 50040000 		.4byte	.LASF76
+ 495 037d 03       		.byte	0x3
+ 496 037e 79       		.byte	0x79
+ 497 037f BA000000 		.4byte	0xba
+ 498 0383 6E       		.byte	0x6e
+ 499 0384 06       		.uleb128 0x6
+ 500 0385 17070000 		.4byte	.LASF77
+ 501 0389 03       		.byte	0x3
+ 502 038a 7B       		.byte	0x7b
+ 503 038b A4000000 		.4byte	0xa4
+ 504 038f 70       		.byte	0x70
+ 505 0390 06       		.uleb128 0x6
+ 506 0391 6D010000 		.4byte	.LASF78
+ 507 0395 03       		.byte	0x3
+ 508 0396 7C       		.byte	0x7c
+ 509 0397 A4000000 		.4byte	0xa4
+ 510 039b 71       		.byte	0x71
+ 511 039c 06       		.uleb128 0x6
+ 512 039d D8090000 		.4byte	.LASF79
+ 513 03a1 03       		.byte	0x3
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 10
+
+
+ 514 03a2 7D       		.byte	0x7d
+ 515 03a3 A4000000 		.4byte	0xa4
+ 516 03a7 72       		.byte	0x72
+ 517 03a8 06       		.uleb128 0x6
+ 518 03a9 5C050000 		.4byte	.LASF80
+ 519 03ad 03       		.byte	0x3
+ 520 03ae 7E       		.byte	0x7e
+ 521 03af A4000000 		.4byte	0xa4
+ 522 03b3 73       		.byte	0x73
+ 523 03b4 06       		.uleb128 0x6
+ 524 03b5 65020000 		.4byte	.LASF81
+ 525 03b9 03       		.byte	0x3
+ 526 03ba 80       		.byte	0x80
+ 527 03bb BA000000 		.4byte	0xba
+ 528 03bf 74       		.byte	0x74
+ 529 03c0 06       		.uleb128 0x6
+ 530 03c1 5E080000 		.4byte	.LASF82
+ 531 03c5 03       		.byte	0x3
+ 532 03c6 81       		.byte	0x81
+ 533 03c7 BA000000 		.4byte	0xba
+ 534 03cb 76       		.byte	0x76
+ 535 03cc 06       		.uleb128 0x6
+ 536 03cd 45020000 		.4byte	.LASF83
+ 537 03d1 03       		.byte	0x3
+ 538 03d2 82       		.byte	0x82
+ 539 03d3 BA000000 		.4byte	0xba
+ 540 03d7 78       		.byte	0x78
+ 541 03d8 06       		.uleb128 0x6
+ 542 03d9 90000000 		.4byte	.LASF84
+ 543 03dd 03       		.byte	0x3
+ 544 03de 83       		.byte	0x83
+ 545 03df BA000000 		.4byte	0xba
+ 546 03e3 7A       		.byte	0x7a
+ 547 03e4 06       		.uleb128 0x6
+ 548 03e5 83090000 		.4byte	.LASF85
+ 549 03e9 03       		.byte	0x3
+ 550 03ea 86       		.byte	0x86
+ 551 03eb A4000000 		.4byte	0xa4
+ 552 03ef 7C       		.byte	0x7c
+ 553 03f0 06       		.uleb128 0x6
+ 554 03f1 D9080000 		.4byte	.LASF86
+ 555 03f5 03       		.byte	0x3
+ 556 03f6 87       		.byte	0x87
+ 557 03f7 A4000000 		.4byte	0xa4
+ 558 03fb 7D       		.byte	0x7d
+ 559 03fc 06       		.uleb128 0x6
+ 560 03fd 26000000 		.4byte	.LASF87
+ 561 0401 03       		.byte	0x3
+ 562 0402 88       		.byte	0x88
+ 563 0403 A4000000 		.4byte	0xa4
+ 564 0407 7E       		.byte	0x7e
+ 565 0408 06       		.uleb128 0x6
+ 566 0409 A1020000 		.4byte	.LASF88
+ 567 040d 03       		.byte	0x3
+ 568 040e 89       		.byte	0x89
+ 569 040f A4000000 		.4byte	0xa4
+ 570 0413 7F       		.byte	0x7f
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 11
+
+
+ 571 0414 06       		.uleb128 0x6
+ 572 0415 33030000 		.4byte	.LASF89
+ 573 0419 03       		.byte	0x3
+ 574 041a 8A       		.byte	0x8a
+ 575 041b A4000000 		.4byte	0xa4
+ 576 041f 80       		.byte	0x80
+ 577 0420 06       		.uleb128 0x6
+ 578 0421 B0040000 		.4byte	.LASF90
+ 579 0425 03       		.byte	0x3
+ 580 0426 8D       		.byte	0x8d
+ 581 0427 C5000000 		.4byte	0xc5
+ 582 042b 84       		.byte	0x84
+ 583 042c 06       		.uleb128 0x6
+ 584 042d DE010000 		.4byte	.LASF91
+ 585 0431 03       		.byte	0x3
+ 586 0432 8E       		.byte	0x8e
+ 587 0433 C5000000 		.4byte	0xc5
+ 588 0437 88       		.byte	0x88
+ 589 0438 06       		.uleb128 0x6
+ 590 0439 6E090000 		.4byte	.LASF92
+ 591 043d 03       		.byte	0x3
+ 592 043e 8F       		.byte	0x8f
+ 593 043f C5000000 		.4byte	0xc5
+ 594 0443 8C       		.byte	0x8c
+ 595 0444 06       		.uleb128 0x6
+ 596 0445 03050000 		.4byte	.LASF93
+ 597 0449 03       		.byte	0x3
+ 598 044a 90       		.byte	0x90
+ 599 044b C5000000 		.4byte	0xc5
+ 600 044f 90       		.byte	0x90
+ 601 0450 06       		.uleb128 0x6
+ 602 0451 F4020000 		.4byte	.LASF94
+ 603 0455 03       		.byte	0x3
+ 604 0456 91       		.byte	0x91
+ 605 0457 C5000000 		.4byte	0xc5
+ 606 045b 94       		.byte	0x94
+ 607 045c 06       		.uleb128 0x6
+ 608 045d 9A040000 		.4byte	.LASF95
+ 609 0461 03       		.byte	0x3
+ 610 0462 92       		.byte	0x92
+ 611 0463 C5000000 		.4byte	0xc5
+ 612 0467 98       		.byte	0x98
+ 613 0468 06       		.uleb128 0x6
+ 614 0469 98090000 		.4byte	.LASF96
+ 615 046d 03       		.byte	0x3
+ 616 046e 93       		.byte	0x93
+ 617 046f C5000000 		.4byte	0xc5
+ 618 0473 9C       		.byte	0x9c
+ 619 0474 06       		.uleb128 0x6
+ 620 0475 0F010000 		.4byte	.LASF97
+ 621 0479 03       		.byte	0x3
+ 622 047a 94       		.byte	0x94
+ 623 047b C5000000 		.4byte	0xc5
+ 624 047f A0       		.byte	0xa0
+ 625 0480 06       		.uleb128 0x6
+ 626 0481 96010000 		.4byte	.LASF98
+ 627 0485 03       		.byte	0x3
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 12
+
+
+ 628 0486 95       		.byte	0x95
+ 629 0487 BA000000 		.4byte	0xba
+ 630 048b A4       		.byte	0xa4
+ 631 048c 06       		.uleb128 0x6
+ 632 048d 85040000 		.4byte	.LASF99
+ 633 0491 03       		.byte	0x3
+ 634 0492 96       		.byte	0x96
+ 635 0493 BA000000 		.4byte	0xba
+ 636 0497 A6       		.byte	0xa6
+ 637 0498 06       		.uleb128 0x6
+ 638 0499 43060000 		.4byte	.LASF100
+ 639 049d 03       		.byte	0x3
+ 640 049e 97       		.byte	0x97
+ 641 049f BA000000 		.4byte	0xba
+ 642 04a3 A8       		.byte	0xa8
+ 643 04a4 06       		.uleb128 0x6
+ 644 04a5 45080000 		.4byte	.LASF101
+ 645 04a9 03       		.byte	0x3
+ 646 04aa 98       		.byte	0x98
+ 647 04ab BA000000 		.4byte	0xba
+ 648 04af AA       		.byte	0xaa
+ 649 04b0 06       		.uleb128 0x6
+ 650 04b1 22040000 		.4byte	.LASF102
+ 651 04b5 03       		.byte	0x3
+ 652 04b6 99       		.byte	0x99
+ 653 04b7 BA000000 		.4byte	0xba
+ 654 04bb AC       		.byte	0xac
+ 655 04bc 06       		.uleb128 0x6
+ 656 04bd 73050000 		.4byte	.LASF103
+ 657 04c1 03       		.byte	0x3
+ 658 04c2 9A       		.byte	0x9a
+ 659 04c3 BA000000 		.4byte	0xba
+ 660 04c7 AE       		.byte	0xae
+ 661 04c8 06       		.uleb128 0x6
+ 662 04c9 BE080000 		.4byte	.LASF104
+ 663 04cd 03       		.byte	0x3
+ 664 04ce 9D       		.byte	0x9d
+ 665 04cf BA000000 		.4byte	0xba
+ 666 04d3 B0       		.byte	0xb0
+ 667 04d4 06       		.uleb128 0x6
+ 668 04d5 39000000 		.4byte	.LASF105
+ 669 04d9 03       		.byte	0x3
+ 670 04da 9E       		.byte	0x9e
+ 671 04db C5000000 		.4byte	0xc5
+ 672 04df B4       		.byte	0xb4
+ 673 04e0 00       		.byte	0
+ 674 04e1 04       		.uleb128 0x4
+ 675 04e2 69040000 		.4byte	.LASF106
+ 676 04e6 03       		.byte	0x3
+ 677 04e7 9F       		.byte	0x9f
+ 678 04e8 D0000000 		.4byte	0xd0
+ 679 04ec 03       		.uleb128 0x3
+ 680 04ed 04       		.byte	0x4
+ 681 04ee 04       		.byte	0x4
+ 682 04ef 22060000 		.4byte	.LASF107
+ 683 04f3 03       		.uleb128 0x3
+ 684 04f4 08       		.byte	0x8
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 13
+
+
+ 685 04f5 04       		.byte	0x4
+ 686 04f6 3E020000 		.4byte	.LASF108
+ 687 04fa 07       		.uleb128 0x7
+ 688 04fb 02       		.byte	0x2
+ 689 04fc 04       		.byte	0x4
+ 690 04fd 6401     		.2byte	0x164
+ 691 04ff 1E050000 		.4byte	0x51e
+ 692 0503 08       		.uleb128 0x8
+ 693 0504 AE090000 		.4byte	.LASF109
+ 694 0508 04       		.byte	0x4
+ 695 0509 6E01     		.2byte	0x16e
+ 696 050b A4000000 		.4byte	0xa4
+ 697 050f 00       		.byte	0
+ 698 0510 08       		.uleb128 0x8
+ 699 0511 C7040000 		.4byte	.LASF110
+ 700 0515 04       		.byte	0x4
+ 701 0516 7201     		.2byte	0x172
+ 702 0518 A4000000 		.4byte	0xa4
+ 703 051c 01       		.byte	0x1
+ 704 051d 00       		.byte	0
+ 705 051e 09       		.uleb128 0x9
+ 706 051f A5000000 		.4byte	.LASF111
+ 707 0523 04       		.byte	0x4
+ 708 0524 7401     		.2byte	0x174
+ 709 0526 FA040000 		.4byte	0x4fa
+ 710 052a 09       		.uleb128 0x9
+ 711 052b DA040000 		.4byte	.LASF112
+ 712 052f 05       		.byte	0x5
+ 713 0530 7F01     		.2byte	0x17f
+ 714 0532 BA000000 		.4byte	0xba
+ 715 0536 0A       		.uleb128 0xa
+ 716 0537 01       		.byte	0x1
+ 717 0538 4B000000 		.4byte	0x4b
+ 718 053c 06       		.byte	0x6
+ 719 053d 7E       		.byte	0x7e
+ 720 053e 5B050000 		.4byte	0x55b
+ 721 0542 0B       		.uleb128 0xb
+ 722 0543 4D090000 		.4byte	.LASF113
+ 723 0547 00       		.byte	0
+ 724 0548 0B       		.uleb128 0xb
+ 725 0549 3D050000 		.4byte	.LASF114
+ 726 054d 01       		.byte	0x1
+ 727 054e 0B       		.uleb128 0xb
+ 728 054f 30090000 		.4byte	.LASF115
+ 729 0553 02       		.byte	0x2
+ 730 0554 0B       		.uleb128 0xb
+ 731 0555 AB010000 		.4byte	.LASF116
+ 732 0559 03       		.byte	0x3
+ 733 055a 00       		.byte	0
+ 734 055b 04       		.uleb128 0x4
+ 735 055c 03020000 		.4byte	.LASF117
+ 736 0560 06       		.byte	0x6
+ 737 0561 83       		.byte	0x83
+ 738 0562 36050000 		.4byte	0x536
+ 739 0566 0A       		.uleb128 0xa
+ 740 0567 01       		.byte	0x1
+ 741 0568 4B000000 		.4byte	0x4b
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 14
+
+
+ 742 056c 06       		.byte	0x6
+ 743 056d 87       		.byte	0x87
+ 744 056e A3050000 		.4byte	0x5a3
+ 745 0572 0B       		.uleb128 0xb
+ 746 0573 EA080000 		.4byte	.LASF118
+ 747 0577 00       		.byte	0
+ 748 0578 0B       		.uleb128 0xb
+ 749 0579 150A0000 		.4byte	.LASF119
+ 750 057d 01       		.byte	0x1
+ 751 057e 0B       		.uleb128 0xb
+ 752 057f 60030000 		.4byte	.LASF120
+ 753 0583 02       		.byte	0x2
+ 754 0584 0B       		.uleb128 0xb
+ 755 0585 09030000 		.4byte	.LASF121
+ 756 0589 03       		.byte	0x3
+ 757 058a 0B       		.uleb128 0xb
+ 758 058b 77020000 		.4byte	.LASF122
+ 759 058f 04       		.byte	0x4
+ 760 0590 0B       		.uleb128 0xb
+ 761 0591 6D060000 		.4byte	.LASF123
+ 762 0595 05       		.byte	0x5
+ 763 0596 0B       		.uleb128 0xb
+ 764 0597 7C030000 		.4byte	.LASF124
+ 765 059b 06       		.byte	0x6
+ 766 059c 0B       		.uleb128 0xb
+ 767 059d FE050000 		.4byte	.LASF125
+ 768 05a1 07       		.byte	0x7
+ 769 05a2 00       		.byte	0
+ 770 05a3 04       		.uleb128 0x4
+ 771 05a4 B1050000 		.4byte	.LASF126
+ 772 05a8 06       		.byte	0x6
+ 773 05a9 90       		.byte	0x90
+ 774 05aa 66050000 		.4byte	0x566
+ 775 05ae 03       		.uleb128 0x3
+ 776 05af 01       		.byte	0x1
+ 777 05b0 02       		.byte	0x2
+ 778 05b1 97060000 		.4byte	.LASF127
+ 779 05b5 05       		.uleb128 0x5
+ 780 05b6 06       		.byte	0x6
+ 781 05b7 07       		.byte	0x7
+ 782 05b8 3B       		.byte	0x3b
+ 783 05b9 D6050000 		.4byte	0x5d6
+ 784 05bd 06       		.uleb128 0x6
+ 785 05be 000A0000 		.4byte	.LASF128
+ 786 05c2 07       		.byte	0x7
+ 787 05c3 3E       		.byte	0x3e
+ 788 05c4 2A050000 		.4byte	0x52a
+ 789 05c8 00       		.byte	0
+ 790 05c9 06       		.uleb128 0x6
+ 791 05ca 570A0000 		.4byte	.LASF129
+ 792 05ce 07       		.byte	0x7
+ 793 05cf 41       		.byte	0x41
+ 794 05d0 D6050000 		.4byte	0x5d6
+ 795 05d4 02       		.byte	0x2
+ 796 05d5 00       		.byte	0
+ 797 05d6 0C       		.uleb128 0xc
+ 798 05d7 2A050000 		.4byte	0x52a
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 15
+
+
+ 799 05db E6050000 		.4byte	0x5e6
+ 800 05df 0D       		.uleb128 0xd
+ 801 05e0 96000000 		.4byte	0x96
+ 802 05e4 01       		.byte	0x1
+ 803 05e5 00       		.byte	0
+ 804 05e6 04       		.uleb128 0x4
+ 805 05e7 FD060000 		.4byte	.LASF130
+ 806 05eb 07       		.byte	0x7
+ 807 05ec 43       		.byte	0x43
+ 808 05ed B5050000 		.4byte	0x5b5
+ 809 05f1 05       		.uleb128 0x5
+ 810 05f2 0E       		.byte	0xe
+ 811 05f3 07       		.byte	0x7
+ 812 05f4 46       		.byte	0x46
+ 813 05f5 12060000 		.4byte	0x612
+ 814 05f9 06       		.uleb128 0x6
+ 815 05fa BE000000 		.4byte	.LASF131
+ 816 05fe 07       		.byte	0x7
+ 817 05ff 49       		.byte	0x49
+ 818 0600 2A050000 		.4byte	0x52a
+ 819 0604 00       		.byte	0
+ 820 0605 06       		.uleb128 0x6
+ 821 0606 CB020000 		.4byte	.LASF132
+ 822 060a 07       		.byte	0x7
+ 823 060b 4C       		.byte	0x4c
+ 824 060c 12060000 		.4byte	0x612
+ 825 0610 02       		.byte	0x2
+ 826 0611 00       		.byte	0
+ 827 0612 0C       		.uleb128 0xc
+ 828 0613 E6050000 		.4byte	0x5e6
+ 829 0617 22060000 		.4byte	0x622
+ 830 061b 0D       		.uleb128 0xd
+ 831 061c 96000000 		.4byte	0x96
+ 832 0620 01       		.byte	0x1
+ 833 0621 00       		.byte	0
+ 834 0622 04       		.uleb128 0x4
+ 835 0623 5A070000 		.4byte	.LASF133
+ 836 0627 07       		.byte	0x7
+ 837 0628 4E       		.byte	0x4e
+ 838 0629 F1050000 		.4byte	0x5f1
+ 839 062d 05       		.uleb128 0x5
+ 840 062e 04       		.byte	0x4
+ 841 062f 07       		.byte	0x7
+ 842 0630 90       		.byte	0x90
+ 843 0631 42060000 		.4byte	0x642
+ 844 0635 06       		.uleb128 0x6
+ 845 0636 70000000 		.4byte	.LASF134
+ 846 063a 07       		.byte	0x7
+ 847 063b 94       		.byte	0x94
+ 848 063c 42060000 		.4byte	0x642
+ 849 0640 00       		.byte	0
+ 850 0641 00       		.byte	0
+ 851 0642 0E       		.uleb128 0xe
+ 852 0643 04       		.byte	0x4
+ 853 0644 48060000 		.4byte	0x648
+ 854 0648 0F       		.uleb128 0xf
+ 855 0649 22060000 		.4byte	0x622
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 16
+
+
+ 856 064d 04       		.uleb128 0x4
+ 857 064e 3F070000 		.4byte	.LASF135
+ 858 0652 07       		.byte	0x7
+ 859 0653 9B       		.byte	0x9b
+ 860 0654 2D060000 		.4byte	0x62d
+ 861 0658 0C       		.uleb128 0xc
+ 862 0659 48060000 		.4byte	0x648
+ 863 065d 68060000 		.4byte	0x668
+ 864 0661 0D       		.uleb128 0xd
+ 865 0662 96000000 		.4byte	0x96
+ 866 0666 00       		.byte	0
+ 867 0667 00       		.byte	0
+ 868 0668 10       		.uleb128 0x10
+ 869 0669 41040000 		.4byte	.LASF144
+ 870 066d 08       		.byte	0x8
+ 871 066e 1A       		.byte	0x1a
+ 872 066f 79060000 		.4byte	0x679
+ 873 0673 05       		.uleb128 0x5
+ 874 0674 03       		.byte	0x3
+ 875 0675 00000000 		.4byte	cy_ble_customs
+ 876 0679 0F       		.uleb128 0xf
+ 877 067a 58060000 		.4byte	0x658
+ 878 067e 11       		.uleb128 0x11
+ 879 067f 39060000 		.4byte	.LASF136
+ 880 0683 03       		.byte	0x3
+ 881 0684 A7       		.byte	0xa7
+ 882 0685 89060000 		.4byte	0x689
+ 883 0689 0E       		.uleb128 0xe
+ 884 068a 04       		.byte	0x4
+ 885 068b 8F060000 		.4byte	0x68f
+ 886 068f 0F       		.uleb128 0xf
+ 887 0690 E1040000 		.4byte	0x4e1
+ 888 0694 12       		.uleb128 0x12
+ 889 0695 71080000 		.4byte	.LASF137
+ 890 0699 06       		.byte	0x6
+ 891 069a 2202     		.2byte	0x222
+ 892 069c 5B050000 		.4byte	0x55b
+ 893 06a0 0C       		.uleb128 0xc
+ 894 06a1 1E050000 		.4byte	0x51e
+ 895 06a5 B0060000 		.4byte	0x6b0
+ 896 06a9 0D       		.uleb128 0xd
+ 897 06aa 96000000 		.4byte	0x96
+ 898 06ae 00       		.byte	0
+ 899 06af 00       		.byte	0
+ 900 06b0 12       		.uleb128 0x12
+ 901 06b1 09090000 		.4byte	.LASF138
+ 902 06b5 06       		.byte	0x6
+ 903 06b6 2C02     		.2byte	0x22c
+ 904 06b8 A0060000 		.4byte	0x6a0
+ 905 06bc 0C       		.uleb128 0xc
+ 906 06bd A3050000 		.4byte	0x5a3
+ 907 06c1 CC060000 		.4byte	0x6cc
+ 908 06c5 0D       		.uleb128 0xd
+ 909 06c6 96000000 		.4byte	0x96
+ 910 06ca 00       		.byte	0
+ 911 06cb 00       		.byte	0
+ 912 06cc 12       		.uleb128 0x12
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 17
+
+
+ 913 06cd 30040000 		.4byte	.LASF139
+ 914 06d1 06       		.byte	0x6
+ 915 06d2 2D02     		.2byte	0x22d
+ 916 06d4 BC060000 		.4byte	0x6bc
+ 917 06d8 13       		.uleb128 0x13
+ 918 06d9 81050000 		.4byte	.LASF140
+ 919 06dd 08       		.byte	0x8
+ 920 06de 48       		.byte	0x48
+ 921 06df 4D060000 		.4byte	0x64d
+ 922 06e3 05       		.uleb128 0x5
+ 923 06e4 03       		.byte	0x3
+ 924 06e5 00000000 		.4byte	cy_ble_customConfig
+ 925 06e9 00       		.byte	0
+ 926              		.section	.debug_abbrev,"",%progbits
+ 927              	.Ldebug_abbrev0:
+ 928 0000 01       		.uleb128 0x1
+ 929 0001 11       		.uleb128 0x11
+ 930 0002 01       		.byte	0x1
+ 931 0003 25       		.uleb128 0x25
+ 932 0004 0E       		.uleb128 0xe
+ 933 0005 13       		.uleb128 0x13
+ 934 0006 0B       		.uleb128 0xb
+ 935 0007 03       		.uleb128 0x3
+ 936 0008 0E       		.uleb128 0xe
+ 937 0009 1B       		.uleb128 0x1b
+ 938 000a 0E       		.uleb128 0xe
+ 939 000b 10       		.uleb128 0x10
+ 940 000c 17       		.uleb128 0x17
+ 941 000d 00       		.byte	0
+ 942 000e 00       		.byte	0
+ 943 000f 02       		.uleb128 0x2
+ 944 0010 24       		.uleb128 0x24
+ 945 0011 00       		.byte	0
+ 946 0012 0B       		.uleb128 0xb
+ 947 0013 0B       		.uleb128 0xb
+ 948 0014 3E       		.uleb128 0x3e
+ 949 0015 0B       		.uleb128 0xb
+ 950 0016 03       		.uleb128 0x3
+ 951 0017 08       		.uleb128 0x8
+ 952 0018 00       		.byte	0
+ 953 0019 00       		.byte	0
+ 954 001a 03       		.uleb128 0x3
+ 955 001b 24       		.uleb128 0x24
+ 956 001c 00       		.byte	0
+ 957 001d 0B       		.uleb128 0xb
+ 958 001e 0B       		.uleb128 0xb
+ 959 001f 3E       		.uleb128 0x3e
+ 960 0020 0B       		.uleb128 0xb
+ 961 0021 03       		.uleb128 0x3
+ 962 0022 0E       		.uleb128 0xe
+ 963 0023 00       		.byte	0
+ 964 0024 00       		.byte	0
+ 965 0025 04       		.uleb128 0x4
+ 966 0026 16       		.uleb128 0x16
+ 967 0027 00       		.byte	0
+ 968 0028 03       		.uleb128 0x3
+ 969 0029 0E       		.uleb128 0xe
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 18
+
+
+ 970 002a 3A       		.uleb128 0x3a
+ 971 002b 0B       		.uleb128 0xb
+ 972 002c 3B       		.uleb128 0x3b
+ 973 002d 0B       		.uleb128 0xb
+ 974 002e 49       		.uleb128 0x49
+ 975 002f 13       		.uleb128 0x13
+ 976 0030 00       		.byte	0
+ 977 0031 00       		.byte	0
+ 978 0032 05       		.uleb128 0x5
+ 979 0033 13       		.uleb128 0x13
+ 980 0034 01       		.byte	0x1
+ 981 0035 0B       		.uleb128 0xb
+ 982 0036 0B       		.uleb128 0xb
+ 983 0037 3A       		.uleb128 0x3a
+ 984 0038 0B       		.uleb128 0xb
+ 985 0039 3B       		.uleb128 0x3b
+ 986 003a 0B       		.uleb128 0xb
+ 987 003b 01       		.uleb128 0x1
+ 988 003c 13       		.uleb128 0x13
+ 989 003d 00       		.byte	0
+ 990 003e 00       		.byte	0
+ 991 003f 06       		.uleb128 0x6
+ 992 0040 0D       		.uleb128 0xd
+ 993 0041 00       		.byte	0
+ 994 0042 03       		.uleb128 0x3
+ 995 0043 0E       		.uleb128 0xe
+ 996 0044 3A       		.uleb128 0x3a
+ 997 0045 0B       		.uleb128 0xb
+ 998 0046 3B       		.uleb128 0x3b
+ 999 0047 0B       		.uleb128 0xb
+ 1000 0048 49       		.uleb128 0x49
+ 1001 0049 13       		.uleb128 0x13
+ 1002 004a 38       		.uleb128 0x38
+ 1003 004b 0B       		.uleb128 0xb
+ 1004 004c 00       		.byte	0
+ 1005 004d 00       		.byte	0
+ 1006 004e 07       		.uleb128 0x7
+ 1007 004f 13       		.uleb128 0x13
+ 1008 0050 01       		.byte	0x1
+ 1009 0051 0B       		.uleb128 0xb
+ 1010 0052 0B       		.uleb128 0xb
+ 1011 0053 3A       		.uleb128 0x3a
+ 1012 0054 0B       		.uleb128 0xb
+ 1013 0055 3B       		.uleb128 0x3b
+ 1014 0056 05       		.uleb128 0x5
+ 1015 0057 01       		.uleb128 0x1
+ 1016 0058 13       		.uleb128 0x13
+ 1017 0059 00       		.byte	0
+ 1018 005a 00       		.byte	0
+ 1019 005b 08       		.uleb128 0x8
+ 1020 005c 0D       		.uleb128 0xd
+ 1021 005d 00       		.byte	0
+ 1022 005e 03       		.uleb128 0x3
+ 1023 005f 0E       		.uleb128 0xe
+ 1024 0060 3A       		.uleb128 0x3a
+ 1025 0061 0B       		.uleb128 0xb
+ 1026 0062 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 19
+
+
+ 1027 0063 05       		.uleb128 0x5
+ 1028 0064 49       		.uleb128 0x49
+ 1029 0065 13       		.uleb128 0x13
+ 1030 0066 38       		.uleb128 0x38
+ 1031 0067 0B       		.uleb128 0xb
+ 1032 0068 00       		.byte	0
+ 1033 0069 00       		.byte	0
+ 1034 006a 09       		.uleb128 0x9
+ 1035 006b 16       		.uleb128 0x16
+ 1036 006c 00       		.byte	0
+ 1037 006d 03       		.uleb128 0x3
+ 1038 006e 0E       		.uleb128 0xe
+ 1039 006f 3A       		.uleb128 0x3a
+ 1040 0070 0B       		.uleb128 0xb
+ 1041 0071 3B       		.uleb128 0x3b
+ 1042 0072 05       		.uleb128 0x5
+ 1043 0073 49       		.uleb128 0x49
+ 1044 0074 13       		.uleb128 0x13
+ 1045 0075 00       		.byte	0
+ 1046 0076 00       		.byte	0
+ 1047 0077 0A       		.uleb128 0xa
+ 1048 0078 04       		.uleb128 0x4
+ 1049 0079 01       		.byte	0x1
+ 1050 007a 0B       		.uleb128 0xb
+ 1051 007b 0B       		.uleb128 0xb
+ 1052 007c 49       		.uleb128 0x49
+ 1053 007d 13       		.uleb128 0x13
+ 1054 007e 3A       		.uleb128 0x3a
+ 1055 007f 0B       		.uleb128 0xb
+ 1056 0080 3B       		.uleb128 0x3b
+ 1057 0081 0B       		.uleb128 0xb
+ 1058 0082 01       		.uleb128 0x1
+ 1059 0083 13       		.uleb128 0x13
+ 1060 0084 00       		.byte	0
+ 1061 0085 00       		.byte	0
+ 1062 0086 0B       		.uleb128 0xb
+ 1063 0087 28       		.uleb128 0x28
+ 1064 0088 00       		.byte	0
+ 1065 0089 03       		.uleb128 0x3
+ 1066 008a 0E       		.uleb128 0xe
+ 1067 008b 1C       		.uleb128 0x1c
+ 1068 008c 0B       		.uleb128 0xb
+ 1069 008d 00       		.byte	0
+ 1070 008e 00       		.byte	0
+ 1071 008f 0C       		.uleb128 0xc
+ 1072 0090 01       		.uleb128 0x1
+ 1073 0091 01       		.byte	0x1
+ 1074 0092 49       		.uleb128 0x49
+ 1075 0093 13       		.uleb128 0x13
+ 1076 0094 01       		.uleb128 0x1
+ 1077 0095 13       		.uleb128 0x13
+ 1078 0096 00       		.byte	0
+ 1079 0097 00       		.byte	0
+ 1080 0098 0D       		.uleb128 0xd
+ 1081 0099 21       		.uleb128 0x21
+ 1082 009a 00       		.byte	0
+ 1083 009b 49       		.uleb128 0x49
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 20
+
+
+ 1084 009c 13       		.uleb128 0x13
+ 1085 009d 2F       		.uleb128 0x2f
+ 1086 009e 0B       		.uleb128 0xb
+ 1087 009f 00       		.byte	0
+ 1088 00a0 00       		.byte	0
+ 1089 00a1 0E       		.uleb128 0xe
+ 1090 00a2 0F       		.uleb128 0xf
+ 1091 00a3 00       		.byte	0
+ 1092 00a4 0B       		.uleb128 0xb
+ 1093 00a5 0B       		.uleb128 0xb
+ 1094 00a6 49       		.uleb128 0x49
+ 1095 00a7 13       		.uleb128 0x13
+ 1096 00a8 00       		.byte	0
+ 1097 00a9 00       		.byte	0
+ 1098 00aa 0F       		.uleb128 0xf
+ 1099 00ab 26       		.uleb128 0x26
+ 1100 00ac 00       		.byte	0
+ 1101 00ad 49       		.uleb128 0x49
+ 1102 00ae 13       		.uleb128 0x13
+ 1103 00af 00       		.byte	0
+ 1104 00b0 00       		.byte	0
+ 1105 00b1 10       		.uleb128 0x10
+ 1106 00b2 34       		.uleb128 0x34
+ 1107 00b3 00       		.byte	0
+ 1108 00b4 03       		.uleb128 0x3
+ 1109 00b5 0E       		.uleb128 0xe
+ 1110 00b6 3A       		.uleb128 0x3a
+ 1111 00b7 0B       		.uleb128 0xb
+ 1112 00b8 3B       		.uleb128 0x3b
+ 1113 00b9 0B       		.uleb128 0xb
+ 1114 00ba 49       		.uleb128 0x49
+ 1115 00bb 13       		.uleb128 0x13
+ 1116 00bc 02       		.uleb128 0x2
+ 1117 00bd 18       		.uleb128 0x18
+ 1118 00be 00       		.byte	0
+ 1119 00bf 00       		.byte	0
+ 1120 00c0 11       		.uleb128 0x11
+ 1121 00c1 34       		.uleb128 0x34
+ 1122 00c2 00       		.byte	0
+ 1123 00c3 03       		.uleb128 0x3
+ 1124 00c4 0E       		.uleb128 0xe
+ 1125 00c5 3A       		.uleb128 0x3a
+ 1126 00c6 0B       		.uleb128 0xb
+ 1127 00c7 3B       		.uleb128 0x3b
+ 1128 00c8 0B       		.uleb128 0xb
+ 1129 00c9 49       		.uleb128 0x49
+ 1130 00ca 13       		.uleb128 0x13
+ 1131 00cb 3F       		.uleb128 0x3f
+ 1132 00cc 19       		.uleb128 0x19
+ 1133 00cd 3C       		.uleb128 0x3c
+ 1134 00ce 19       		.uleb128 0x19
+ 1135 00cf 00       		.byte	0
+ 1136 00d0 00       		.byte	0
+ 1137 00d1 12       		.uleb128 0x12
+ 1138 00d2 34       		.uleb128 0x34
+ 1139 00d3 00       		.byte	0
+ 1140 00d4 03       		.uleb128 0x3
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 21
+
+
+ 1141 00d5 0E       		.uleb128 0xe
+ 1142 00d6 3A       		.uleb128 0x3a
+ 1143 00d7 0B       		.uleb128 0xb
+ 1144 00d8 3B       		.uleb128 0x3b
+ 1145 00d9 05       		.uleb128 0x5
+ 1146 00da 49       		.uleb128 0x49
+ 1147 00db 13       		.uleb128 0x13
+ 1148 00dc 3F       		.uleb128 0x3f
+ 1149 00dd 19       		.uleb128 0x19
+ 1150 00de 3C       		.uleb128 0x3c
+ 1151 00df 19       		.uleb128 0x19
+ 1152 00e0 00       		.byte	0
+ 1153 00e1 00       		.byte	0
+ 1154 00e2 13       		.uleb128 0x13
+ 1155 00e3 34       		.uleb128 0x34
+ 1156 00e4 00       		.byte	0
+ 1157 00e5 03       		.uleb128 0x3
+ 1158 00e6 0E       		.uleb128 0xe
+ 1159 00e7 3A       		.uleb128 0x3a
+ 1160 00e8 0B       		.uleb128 0xb
+ 1161 00e9 3B       		.uleb128 0x3b
+ 1162 00ea 0B       		.uleb128 0xb
+ 1163 00eb 49       		.uleb128 0x49
+ 1164 00ec 13       		.uleb128 0x13
+ 1165 00ed 3F       		.uleb128 0x3f
+ 1166 00ee 19       		.uleb128 0x19
+ 1167 00ef 02       		.uleb128 0x2
+ 1168 00f0 18       		.uleb128 0x18
+ 1169 00f1 00       		.byte	0
+ 1170 00f2 00       		.byte	0
+ 1171 00f3 00       		.byte	0
+ 1172              		.section	.debug_aranges,"",%progbits
+ 1173 0000 14000000 		.4byte	0x14
+ 1174 0004 0200     		.2byte	0x2
+ 1175 0006 00000000 		.4byte	.Ldebug_info0
+ 1176 000a 04       		.byte	0x4
+ 1177 000b 00       		.byte	0
+ 1178 000c 0000     		.2byte	0
+ 1179 000e 0000     		.2byte	0
+ 1180 0010 00000000 		.4byte	0
+ 1181 0014 00000000 		.4byte	0
+ 1182              		.section	.debug_line,"",%progbits
+ 1183              	.Ldebug_line0:
+ 1184 0000 08020000 		.section	.debug_str,"MS",%progbits,1
+ 1184      02000202 
+ 1184      00000201 
+ 1184      FB0E0D00 
+ 1184      01010101 
+ 1185              	.LASF55:
+ 1186 0000 70726F74 		.ascii	"protBusMasterMask\000"
+ 1186      4275734D 
+ 1186      61737465 
+ 1186      724D6173 
+ 1186      6B00
+ 1187              	.LASF65:
+ 1188 0012 666C6173 		.ascii	"flashCtlMainWs3Freq\000"
+ 1188      6843746C 
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 22
+
+
+ 1188      4D61696E 
+ 1188      57733346 
+ 1188      72657100 
+ 1189              	.LASF87:
+ 1190 0026 6770696F 		.ascii	"gpioPrtCfgInOffset\000"
+ 1190      50727443 
+ 1190      6667496E 
+ 1190      4F666673 
+ 1190      657400
+ 1191              	.LASF105:
+ 1192 0039 6970634C 		.ascii	"ipcLockStatusOffset\000"
+ 1192      6F636B53 
+ 1192      74617475 
+ 1192      734F6666 
+ 1192      73657400 
+ 1193              	.LASF31:
+ 1194 004d 63727970 		.ascii	"cryptoVersion\000"
+ 1194      746F5665 
+ 1194      7273696F 
+ 1194      6E00
+ 1195              	.LASF49:
+ 1196 005b 70657269 		.ascii	"periClockNr\000"
+ 1196      436C6F63 
+ 1196      6B4E7200 
+ 1197              	.LASF27:
+ 1198 0067 70617373 		.ascii	"passBase\000"
+ 1198      42617365 
+ 1198      00
+ 1199              	.LASF134:
+ 1200 0070 63757374 		.ascii	"customs\000"
+ 1200      6F6D7300 
+ 1201              	.LASF40:
+ 1202 0078 63707573 		.ascii	"cpussIpcIrqNr\000"
+ 1202      73497063 
+ 1202      4972714E 
+ 1202      7200
+ 1203              	.LASF5:
+ 1204 0086 5F5F7569 		.ascii	"__uint8_t\000"
+ 1204      6E74385F 
+ 1204      7400
+ 1205              	.LASF84:
+ 1206 0090 70657269 		.ascii	"periDiv24_5CtlOffset\000"
+ 1206      44697632 
+ 1206      345F3543 
+ 1206      746C4F66 
+ 1206      66736574 
+ 1207              	.LASF111:
+ 1208 00a5 63795F73 		.ascii	"cy_stc_ble_conn_handle_t\000"
+ 1208      74635F62 
+ 1208      6C655F63 
+ 1208      6F6E6E5F 
+ 1208      68616E64 
+ 1209              	.LASF131:
+ 1210 00be 63757374 		.ascii	"customServHandle\000"
+ 1210      6F6D5365 
+ 1210      72764861 
+ 1210      6E646C65 
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 23
+
+
+ 1210      00
+ 1211              	.LASF20:
+ 1212 00cf 63707573 		.ascii	"cpussBase\000"
+ 1212      73426173 
+ 1212      6500
+ 1213              	.LASF69:
+ 1214 00d9 64774368 		.ascii	"dwChCtlPrioPos\000"
+ 1214      43746C50 
+ 1214      72696F50 
+ 1214      6F7300
+ 1215              	.LASF13:
+ 1216 00e8 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1216      206C6F6E 
+ 1216      6720756E 
+ 1216      7369676E 
+ 1216      65642069 
+ 1217              	.LASF73:
+ 1218 00ff 70657269 		.ascii	"periTrCmdOffset\000"
+ 1218      5472436D 
+ 1218      644F6666 
+ 1218      73657400 
+ 1219              	.LASF97:
+ 1220 010f 63707573 		.ascii	"cpussSysTickCtlOffset\000"
+ 1220      73537973 
+ 1220      5469636B 
+ 1220      43746C4F 
+ 1220      66667365 
+ 1221              	.LASF58:
+ 1222 0125 666C6173 		.ascii	"flashPipeRequired\000"
+ 1222      68506970 
+ 1222      65526571 
+ 1222      75697265 
+ 1222      6400
+ 1223              	.LASF62:
+ 1224 0137 666C6173 		.ascii	"flashCtlMainWs0Freq\000"
+ 1224      6843746C 
+ 1224      4D61696E 
+ 1224      57733046 
+ 1224      72657100 
+ 1225              	.LASF17:
+ 1226 014b 696E7431 		.ascii	"int16_t\000"
+ 1226      365F7400 
+ 1227              	.LASF1:
+ 1228 0153 6C6F6E67 		.ascii	"long long int\000"
+ 1228      206C6F6E 
+ 1228      6720696E 
+ 1228      7400
+ 1229              	.LASF3:
+ 1230 0161 7369676E 		.ascii	"signed char\000"
+ 1230      65642063 
+ 1230      68617200 
+ 1231              	.LASF78:
+ 1232 016d 70657269 		.ascii	"periDivCmdTypeSelPos\000"
+ 1232      44697643 
+ 1232      6D645479 
+ 1232      70655365 
+ 1232      6C506F73 
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 24
+
+
+ 1233              	.LASF24:
+ 1234 0182 70726F74 		.ascii	"protBase\000"
+ 1234      42617365 
+ 1234      00
+ 1235              	.LASF36:
+ 1236 018b 69706356 		.ascii	"ipcVersion\000"
+ 1236      65727369 
+ 1236      6F6E00
+ 1237              	.LASF98:
+ 1238 0196 63707573 		.ascii	"cpussCm0NmiCtlOffset\000"
+ 1238      73436D30 
+ 1238      4E6D6943 
+ 1238      746C4F66 
+ 1238      66736574 
+ 1239              	.LASF116:
+ 1240 01ab 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOP_INITIATED\000"
+ 1240      4C455F41 
+ 1240      44565F53 
+ 1240      54415445 
+ 1240      5F53544F 
+ 1241              	.LASF25:
+ 1242 01cb 6873696F 		.ascii	"hsiomBase\000"
+ 1242      6D426173 
+ 1242      6500
+ 1243              	.LASF10:
+ 1244 01d5 6C6F6E67 		.ascii	"long int\000"
+ 1244      20696E74 
+ 1244      00
+ 1245              	.LASF91:
+ 1246 01de 63707573 		.ascii	"cpussCm4ClockCtlOffset\000"
+ 1246      73436D34 
+ 1246      436C6F63 
+ 1246      6B43746C 
+ 1246      4F666673 
+ 1247              	.LASF56:
+ 1248 01f5 63727970 		.ascii	"cryptoMemSize\000"
+ 1248      746F4D65 
+ 1248      6D53697A 
+ 1248      6500
+ 1249              	.LASF117:
+ 1250 0203 63795F65 		.ascii	"cy_en_ble_adv_state_t\000"
+ 1250      6E5F626C 
+ 1250      655F6164 
+ 1250      765F7374 
+ 1250      6174655F 
+ 1251              	.LASF22:
+ 1252 0219 70657269 		.ascii	"periBase\000"
+ 1252      42617365 
+ 1252      00
+ 1253              	.LASF54:
+ 1254 0222 73797350 		.ascii	"sysPmSimoPresent\000"
+ 1254      6D53696D 
+ 1254      6F507265 
+ 1254      73656E74 
+ 1254      00
+ 1255              	.LASF44:
+ 1256 0233 63707573 		.ascii	"cpussFmIrq\000"
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 25
+
+
+ 1256      73466D49 
+ 1256      727100
+ 1257              	.LASF108:
+ 1258 023e 646F7562 		.ascii	"double\000"
+ 1258      6C6500
+ 1259              	.LASF83:
+ 1260 0245 70657269 		.ascii	"periDiv16_5CtlOffset\000"
+ 1260      44697631 
+ 1260      365F3543 
+ 1260      746C4F66 
+ 1260      66736574 
+ 1261              	.LASF47:
+ 1262 025a 73727373 		.ascii	"srssNumPll\000"
+ 1262      4E756D50 
+ 1262      6C6C00
+ 1263              	.LASF81:
+ 1264 0265 70657269 		.ascii	"periDiv8CtlOffset\000"
+ 1264      44697638 
+ 1264      43746C4F 
+ 1264      66667365 
+ 1264      7400
+ 1265              	.LASF122:
+ 1266 0277 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_INCL_DISCOVERING\000"
+ 1266      4C455F43 
+ 1266      4F4E4E5F 
+ 1266      53544154 
+ 1266      455F434C 
+ 1267              	.LASF88:
+ 1268 02a1 6770696F 		.ascii	"gpioPrtCfgOutOffset\000"
+ 1268      50727443 
+ 1268      66674F75 
+ 1268      744F6666 
+ 1268      73657400 
+ 1269              	.LASF21:
+ 1270 02b5 666C6173 		.ascii	"flashcBase\000"
+ 1270      68634261 
+ 1270      736500
+ 1271              	.LASF11:
+ 1272 02c0 5F5F7569 		.ascii	"__uint32_t\000"
+ 1272      6E743332 
+ 1272      5F7400
+ 1273              	.LASF132:
+ 1274 02cb 63757374 		.ascii	"customServInfo\000"
+ 1274      6F6D5365 
+ 1274      7276496E 
+ 1274      666F00
+ 1275              	.LASF51:
+ 1276 02da 70617373 		.ascii	"passSarChannels\000"
+ 1276      53617243 
+ 1276      68616E6E 
+ 1276      656C7300 
+ 1277              	.LASF6:
+ 1278 02ea 5F5F696E 		.ascii	"__int16_t\000"
+ 1278      7431365F 
+ 1278      7400
+ 1279              	.LASF94:
+ 1280 02f4 63707573 		.ascii	"cpussCm4PwrCtlOffset\000"
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 26
+
+
+ 1280      73436D34 
+ 1280      50777243 
+ 1280      746C4F66 
+ 1280      66736574 
+ 1281              	.LASF121:
+ 1282 0309 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_SRVC_DISCOVERING\000"
+ 1282      4C455F43 
+ 1282      4F4E4E5F 
+ 1282      53544154 
+ 1282      455F434C 
+ 1283              	.LASF89:
+ 1284 0333 6770696F 		.ascii	"gpioPrtCfgSioOffset\000"
+ 1284      50727443 
+ 1284      66675369 
+ 1284      6F4F6666 
+ 1284      73657400 
+ 1285              	.LASF41:
+ 1286 0347 63707573 		.ascii	"cpussDwChNr\000"
+ 1286      73447743 
+ 1286      684E7200 
+ 1287              	.LASF0:
+ 1288 0353 756E7369 		.ascii	"unsigned int\000"
+ 1288      676E6564 
+ 1288      20696E74 
+ 1288      00
+ 1289              	.LASF120:
+ 1290 0360 43595F42 		.ascii	"CY_BLE_CONN_STATE_CONNECTED\000"
+ 1290      4C455F43 
+ 1290      4F4E4E5F 
+ 1290      53544154 
+ 1290      455F434F 
+ 1291              	.LASF124:
+ 1292 037c 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DESCR_DISCOVERING\000"
+ 1292      4C455F43 
+ 1292      4F4E4E5F 
+ 1292      53544154 
+ 1292      455F434C 
+ 1293              	.LASF18:
+ 1294 03a7 75696E74 		.ascii	"uint16_t\000"
+ 1294      31365F74 
+ 1294      00
+ 1295              	.LASF74:
+ 1296 03b0 70657269 		.ascii	"periTrCmdGrSelMsk\000"
+ 1296      5472436D 
+ 1296      64477253 
+ 1296      656C4D73 
+ 1296      6B00
+ 1297              	.LASF12:
+ 1298 03c2 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1298      20756E73 
+ 1298      69676E65 
+ 1298      6420696E 
+ 1298      7400
+ 1299              	.LASF39:
+ 1300 03d4 63707573 		.ascii	"cpussIpcNr\000"
+ 1300      73497063 
+ 1300      4E7200
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 27
+
+
+ 1301              	.LASF26:
+ 1302 03df 6770696F 		.ascii	"gpioBase\000"
+ 1302      42617365 
+ 1302      00
+ 1303              	.LASF142:
+ 1304 03e8 47656E65 		.ascii	"Generated_Source\\PSoC6\\BLE_custom_config.c\000"
+ 1304      72617465 
+ 1304      645F536F 
+ 1304      75726365 
+ 1304      5C50536F 
+ 1305              	.LASF75:
+ 1306 0413 70657269 		.ascii	"periTrGrOffset\000"
+ 1306      54724772 
+ 1306      4F666673 
+ 1306      657400
+ 1307              	.LASF102:
+ 1308 0422 63707573 		.ascii	"cpussRam1Ctl0\000"
+ 1308      7352616D 
+ 1308      3143746C 
+ 1308      3000
+ 1309              	.LASF139:
+ 1310 0430 63795F62 		.ascii	"cy_ble_connState\000"
+ 1310      6C655F63 
+ 1310      6F6E6E53 
+ 1310      74617465 
+ 1310      00
+ 1311              	.LASF144:
+ 1312 0441 63795F62 		.ascii	"cy_ble_customs\000"
+ 1312      6C655F63 
+ 1312      7573746F 
+ 1312      6D7300
+ 1313              	.LASF76:
+ 1314 0450 70657269 		.ascii	"periTrGrSize\000"
+ 1314      54724772 
+ 1314      53697A65 
+ 1314      00
+ 1315              	.LASF34:
+ 1316 045d 6770696F 		.ascii	"gpioVersion\000"
+ 1316      56657273 
+ 1316      696F6E00 
+ 1317              	.LASF106:
+ 1318 0469 63795F73 		.ascii	"cy_stc_device_t\000"
+ 1318      74635F64 
+ 1318      65766963 
+ 1318      655F7400 
+ 1319              	.LASF52:
+ 1320 0479 65704D6F 		.ascii	"epMonitorNr\000"
+ 1320      6E69746F 
+ 1320      724E7200 
+ 1321              	.LASF99:
+ 1322 0485 63707573 		.ascii	"cpussCm4NmiCtlOffset\000"
+ 1322      73436D34 
+ 1322      4E6D6943 
+ 1322      746C4F66 
+ 1322      66736574 
+ 1323              	.LASF95:
+ 1324 049a 63707573 		.ascii	"cpussTrimRamCtlOffset\000"
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 28
+
+
+ 1324      73547269 
+ 1324      6D52616D 
+ 1324      43746C4F 
+ 1324      66667365 
+ 1325              	.LASF90:
+ 1326 04b0 63707573 		.ascii	"cpussCm0ClockCtlOffset\000"
+ 1326      73436D30 
+ 1326      436C6F63 
+ 1326      6B43746C 
+ 1326      4F666673 
+ 1327              	.LASF110:
+ 1328 04c7 61747449 		.ascii	"attId\000"
+ 1328      6400
+ 1329              	.LASF30:
+ 1330 04cd 63707573 		.ascii	"cpussVersion\000"
+ 1330      73566572 
+ 1330      73696F6E 
+ 1330      00
+ 1331              	.LASF112:
+ 1332 04da 63795F62 		.ascii	"cy_ble_gatt_db_attr_handle_t\000"
+ 1332      6C655F67 
+ 1332      6174745F 
+ 1332      64625F61 
+ 1332      7474725F 
+ 1333              	.LASF37:
+ 1334 04f7 70657269 		.ascii	"periVersion\000"
+ 1334      56657273 
+ 1334      696F6E00 
+ 1335              	.LASF93:
+ 1336 0503 63707573 		.ascii	"cpussCm0StatusOffset\000"
+ 1336      73436D30 
+ 1336      53746174 
+ 1336      75734F66 
+ 1336      66736574 
+ 1337              	.LASF14:
+ 1338 0518 73697A65 		.ascii	"sizetype\000"
+ 1338      74797065 
+ 1338      00
+ 1339              	.LASF67:
+ 1340 0521 64774368 		.ascii	"dwChOffset\000"
+ 1340      4F666673 
+ 1340      657400
+ 1341              	.LASF42:
+ 1342 052c 63707573 		.ascii	"cpussFlashPaSize\000"
+ 1342      73466C61 
+ 1342      73685061 
+ 1342      53697A65 
+ 1342      00
+ 1343              	.LASF114:
+ 1344 053d 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADV_INITIATED\000"
+ 1344      4C455F41 
+ 1344      44565F53 
+ 1344      54415445 
+ 1344      5F414456 
+ 1345              	.LASF80:
+ 1346 055c 70657269 		.ascii	"periDivCmdPaTypeSelPos\000"
+ 1346      44697643 
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 29
+
+
+ 1346      6D645061 
+ 1346      54797065 
+ 1346      53656C50 
+ 1347              	.LASF103:
+ 1348 0573 63707573 		.ascii	"cpussRam2Ctl0\000"
+ 1348      7352616D 
+ 1348      3243746C 
+ 1348      3000
+ 1349              	.LASF140:
+ 1350 0581 63795F62 		.ascii	"cy_ble_customConfig\000"
+ 1350      6C655F63 
+ 1350      7573746F 
+ 1350      6D436F6E 
+ 1350      66696700 
+ 1351              	.LASF71:
+ 1352 0595 64775374 		.ascii	"dwStatusChIdxPos\000"
+ 1352      61747573 
+ 1352      43684964 
+ 1352      78506F73 
+ 1352      00
+ 1353              	.LASF53:
+ 1354 05a6 75646250 		.ascii	"udbPresent\000"
+ 1354      72657365 
+ 1354      6E7400
+ 1355              	.LASF126:
+ 1356 05b1 63795F65 		.ascii	"cy_en_ble_conn_state_t\000"
+ 1356      6E5F626C 
+ 1356      655F636F 
+ 1356      6E6E5F73 
+ 1356      74617465 
+ 1357              	.LASF33:
+ 1358 05c8 666C6173 		.ascii	"flashcVersion\000"
+ 1358      68635665 
+ 1358      7273696F 
+ 1358      6E00
+ 1359              	.LASF29:
+ 1360 05d6 63727970 		.ascii	"cryptoBase\000"
+ 1360      746F4261 
+ 1360      736500
+ 1361              	.LASF50:
+ 1362 05e1 736D6966 		.ascii	"smifDeviceNr\000"
+ 1362      44657669 
+ 1362      63654E72 
+ 1362      00
+ 1363              	.LASF59:
+ 1364 05ee 666C6173 		.ascii	"flashWriteDelay\000"
+ 1364      68577269 
+ 1364      74654465 
+ 1364      6C617900 
+ 1365              	.LASF125:
+ 1366 05fe 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCOVERED\000"
+ 1366      4C455F43 
+ 1366      4F4E4E5F 
+ 1366      53544154 
+ 1366      455F434C 
+ 1367              	.LASF107:
+ 1368 0622 666C6F61 		.ascii	"float\000"
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 30
+
+
+ 1368      7400
+ 1369              	.LASF72:
+ 1370 0628 64775374 		.ascii	"dwStatusChIdxMsk\000"
+ 1370      61747573 
+ 1370      43684964 
+ 1370      784D736B 
+ 1370      00
+ 1371              	.LASF136:
+ 1372 0639 63795F64 		.ascii	"cy_device\000"
+ 1372      65766963 
+ 1372      6500
+ 1373              	.LASF100:
+ 1374 0643 63707573 		.ascii	"cpussRomCtl\000"
+ 1374      73526F6D 
+ 1374      43746C00 
+ 1375              	.LASF70:
+ 1376 064f 64774368 		.ascii	"dwChCtlPreemptablePos\000"
+ 1376      43746C50 
+ 1376      7265656D 
+ 1376      70746162 
+ 1376      6C65506F 
+ 1377              	.LASF23:
+ 1378 0665 75646242 		.ascii	"udbBase\000"
+ 1378      61736500 
+ 1379              	.LASF123:
+ 1380 066d 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_CHAR_DISCOVERING\000"
+ 1380      4C455F43 
+ 1380      4F4E4E5F 
+ 1380      53544154 
+ 1380      455F434C 
+ 1381              	.LASF127:
+ 1382 0697 5F426F6F 		.ascii	"_Bool\000"
+ 1382      6C00
+ 1383              	.LASF4:
+ 1384 069d 756E7369 		.ascii	"unsigned char\000"
+ 1384      676E6564 
+ 1384      20636861 
+ 1384      7200
+ 1385              	.LASF66:
+ 1386 06ab 666C6173 		.ascii	"flashCtlMainWs4Freq\000"
+ 1386      6843746C 
+ 1386      4D61696E 
+ 1386      57733446 
+ 1386      72657100 
+ 1387              	.LASF143:
+ 1388 06bf 433A5C53 		.ascii	"C:\\School\\EE 4450\\PSoC_ARHUD\\ARHUD\\01_BT_Test."
+ 1388      63686F6F 
+ 1388      6C5C4545 
+ 1388      20343435 
+ 1388      305C5053 
+ 1389 06ed 63796473 		.ascii	"cydsn\000"
+ 1389      6E00
+ 1390              	.LASF7:
+ 1391 06f3 73686F72 		.ascii	"short int\000"
+ 1391      7420696E 
+ 1391      7400
+ 1392              	.LASF130:
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 31
+
+
+ 1393 06fd 63795F73 		.ascii	"cy_stc_ble_customs_info_t\000"
+ 1393      74635F62 
+ 1393      6C655F63 
+ 1393      7573746F 
+ 1393      6D735F69 
+ 1394              	.LASF77:
+ 1395 0717 70657269 		.ascii	"periDivCmdDivSelMsk\000"
+ 1395      44697643 
+ 1395      6D644469 
+ 1395      7653656C 
+ 1395      4D736B00 
+ 1396              	.LASF64:
+ 1397 072b 666C6173 		.ascii	"flashCtlMainWs2Freq\000"
+ 1397      6843746C 
+ 1397      4D61696E 
+ 1397      57733246 
+ 1397      72657100 
+ 1398              	.LASF135:
+ 1399 073f 63795F73 		.ascii	"cy_stc_ble_custom_config_t\000"
+ 1399      74635F62 
+ 1399      6C655F63 
+ 1399      7573746F 
+ 1399      6D5F636F 
+ 1400              	.LASF133:
+ 1401 075a 63795F73 		.ascii	"cy_stc_ble_customs_t\000"
+ 1401      74635F62 
+ 1401      6C655F63 
+ 1401      7573746F 
+ 1401      6D735F74 
+ 1402              	.LASF48:
+ 1403 076f 73727373 		.ascii	"srssNumHfroot\000"
+ 1403      4E756D48 
+ 1403      66726F6F 
+ 1403      7400
+ 1404              	.LASF61:
+ 1405 077d 666C6173 		.ascii	"flashEraseDelay\000"
+ 1405      68457261 
+ 1405      73654465 
+ 1405      6C617900 
+ 1406              	.LASF19:
+ 1407 078d 75696E74 		.ascii	"uint32_t\000"
+ 1407      33325F74 
+ 1407      00
+ 1408              	.LASF141:
+ 1409 0796 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1409      43313120 
+ 1409      352E342E 
+ 1409      31203230 
+ 1409      31363036 
+ 1410 07c9 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 1410      20726576 
+ 1410      6973696F 
+ 1410      6E203233 
+ 1410      37373135 
+ 1411 07fc 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 1411      67202D66 
+ 1411      66756E63 
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 32
+
+
+ 1411      74696F6E 
+ 1411      2D736563 
+ 1412              	.LASF2:
+ 1413 0828 6C6F6E67 		.ascii	"long double\000"
+ 1413      20646F75 
+ 1413      626C6500 
+ 1414              	.LASF15:
+ 1415 0834 63686172 		.ascii	"char\000"
+ 1415      00
+ 1416              	.LASF38:
+ 1417 0839 70726F74 		.ascii	"protVersion\000"
+ 1417      56657273 
+ 1417      696F6E00 
+ 1418              	.LASF101:
+ 1419 0845 63707573 		.ascii	"cpussRam0Ctl0\000"
+ 1419      7352616D 
+ 1419      3043746C 
+ 1419      3000
+ 1420              	.LASF8:
+ 1421 0853 5F5F7569 		.ascii	"__uint16_t\000"
+ 1421      6E743136 
+ 1421      5F7400
+ 1422              	.LASF82:
+ 1423 085e 70657269 		.ascii	"periDiv16CtlOffset\000"
+ 1423      44697631 
+ 1423      3643746C 
+ 1423      4F666673 
+ 1423      657400
+ 1424              	.LASF137:
+ 1425 0871 63795F62 		.ascii	"cy_ble_advState\000"
+ 1425      6C655F61 
+ 1425      64765374 
+ 1425      61746500 
+ 1426              	.LASF35:
+ 1427 0881 6873696F 		.ascii	"hsiomVersion\000"
+ 1427      6D566572 
+ 1427      73696F6E 
+ 1427      00
+ 1428              	.LASF63:
+ 1429 088e 666C6173 		.ascii	"flashCtlMainWs1Freq\000"
+ 1429      6843746C 
+ 1429      4D61696E 
+ 1429      57733146 
+ 1429      72657100 
+ 1430              	.LASF9:
+ 1431 08a2 73686F72 		.ascii	"short unsigned int\000"
+ 1431      7420756E 
+ 1431      7369676E 
+ 1431      65642069 
+ 1431      6E7400
+ 1432              	.LASF68:
+ 1433 08b5 64774368 		.ascii	"dwChSize\000"
+ 1433      53697A65 
+ 1433      00
+ 1434              	.LASF104:
+ 1435 08be 69706353 		.ascii	"ipcStructSize\000"
+ 1435      74727563 
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 33
+
+
+ 1435      7453697A 
+ 1435      6500
+ 1436              	.LASF43:
+ 1437 08cc 63707573 		.ascii	"cpussIpc0Irq\000"
+ 1437      73497063 
+ 1437      30497271 
+ 1437      00
+ 1438              	.LASF86:
+ 1439 08d9 6770696F 		.ascii	"gpioPrtCfgOffset\000"
+ 1439      50727443 
+ 1439      66674F66 
+ 1439      66736574 
+ 1439      00
+ 1440              	.LASF118:
+ 1441 08ea 43595F42 		.ascii	"CY_BLE_CONN_STATE_DISCONNECTED\000"
+ 1441      4C455F43 
+ 1441      4F4E4E5F 
+ 1441      53544154 
+ 1441      455F4449 
+ 1442              	.LASF138:
+ 1443 0909 63795F62 		.ascii	"cy_ble_connHandle\000"
+ 1443      6C655F63 
+ 1443      6F6E6E48 
+ 1443      616E646C 
+ 1443      6500
+ 1444              	.LASF45:
+ 1445 091b 63707573 		.ascii	"cpussNotConnectedIrq\000"
+ 1445      734E6F74 
+ 1445      436F6E6E 
+ 1445      65637465 
+ 1445      64497271 
+ 1446              	.LASF115:
+ 1447 0930 43595F42 		.ascii	"CY_BLE_ADV_STATE_ADVERTISING\000"
+ 1447      4C455F41 
+ 1447      44565F53 
+ 1447      54415445 
+ 1447      5F414456 
+ 1448              	.LASF113:
+ 1449 094d 43595F42 		.ascii	"CY_BLE_ADV_STATE_STOPPED\000"
+ 1449      4C455F41 
+ 1449      44565F53 
+ 1449      54415445 
+ 1449      5F53544F 
+ 1450              	.LASF16:
+ 1451 0966 75696E74 		.ascii	"uint8_t\000"
+ 1451      385F7400 
+ 1452              	.LASF92:
+ 1453 096e 63707573 		.ascii	"cpussCm4StatusOffset\000"
+ 1453      73436D34 
+ 1453      53746174 
+ 1453      75734F66 
+ 1453      66736574 
+ 1454              	.LASF85:
+ 1455 0983 6770696F 		.ascii	"gpioPrtIntrCfgOffset\000"
+ 1455      50727449 
+ 1455      6E747243 
+ 1455      66674F66 
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 34
+
+
+ 1455      66736574 
+ 1456              	.LASF96:
+ 1457 0998 63707573 		.ascii	"cpussTrimRomCtlOffset\000"
+ 1457      73547269 
+ 1457      6D526F6D 
+ 1457      43746C4F 
+ 1457      66667365 
+ 1458              	.LASF109:
+ 1459 09ae 62644861 		.ascii	"bdHandle\000"
+ 1459      6E646C65 
+ 1459      00
+ 1460              	.LASF46:
+ 1461 09b7 73727373 		.ascii	"srssNumClkpath\000"
+ 1461      4E756D43 
+ 1461      6C6B7061 
+ 1461      746800
+ 1462              	.LASF32:
+ 1463 09c6 64775665 		.ascii	"dwVersion\000"
+ 1463      7273696F 
+ 1463      6E00
+ 1464              	.LASF28:
+ 1465 09d0 69706342 		.ascii	"ipcBase\000"
+ 1465      61736500 
+ 1466              	.LASF79:
+ 1467 09d8 70657269 		.ascii	"periDivCmdPaDivSelPos\000"
+ 1467      44697643 
+ 1467      6D645061 
+ 1467      44697653 
+ 1467      656C506F 
+ 1468              	.LASF60:
+ 1469 09ee 666C6173 		.ascii	"flashProgramDelay\000"
+ 1469      6850726F 
+ 1469      6772616D 
+ 1469      44656C61 
+ 1469      7900
+ 1470              	.LASF128:
+ 1471 0a00 63757374 		.ascii	"customServCharHandle\000"
+ 1471      6F6D5365 
+ 1471      72764368 
+ 1471      61724861 
+ 1471      6E646C65 
+ 1472              	.LASF119:
+ 1473 0a15 43595F42 		.ascii	"CY_BLE_CONN_STATE_CLIENT_DISCONNECTED_DISCOVERED\000"
+ 1473      4C455F43 
+ 1473      4F4E4E5F 
+ 1473      53544154 
+ 1473      455F434C 
+ 1474              	.LASF57:
+ 1475 0a46 666C6173 		.ascii	"flashRwwRequired\000"
+ 1475      68527777 
+ 1475      52657175 
+ 1475      69726564 
+ 1475      00
+ 1476              	.LASF129:
+ 1477 0a57 63757374 		.ascii	"customServCharDesc\000"
+ 1477      6F6D5365 
+ 1477      72764368 
+ARM GAS  C:\Users\steel\AppData\Local\Temp\ccOkWoMg.s 			page 35
+
+
+ 1477      61724465 
+ 1477      736300
+ 1478              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
